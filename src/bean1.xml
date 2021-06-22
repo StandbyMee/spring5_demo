@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    &lt;!&ndash;spring配置文件&ndash;&gt;-->
+<!--    <bean id="user" class="com.practice.spring5.User"></bean>-->
+
+<!--    &lt;!&ndash;set方法注入属性&ndash;&gt;-->
+<!--    <bean id="book" class="com.practice.spring5.Book">-->
+<!--        &lt;!&ndash;使用property标签进行属性注入-->
+<!--        name是属性名-->
+<!--        value是属性值&ndash;&gt;-->
+<!--        <property name="bookName" value="a"></property>-->
+<!--        <property name="bookAuthor" value="Author1"></property>-->
+<!--    </bean>-->
+    <!--通过有参构造器注入属性-->
+    <bean id="orders" class="com.practice.spring5.Orders">
+        <constructor-arg name="name" value="abc"></constructor-arg>
+        <constructor-arg name="address" value="China"></constructor-arg>
+    </bean>
+</beans>
